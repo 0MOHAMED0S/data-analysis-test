@@ -10,4 +10,4 @@ Route::get('/user', function (Request $request) {
 
 Route::get('/data-analysis', [SaleController::class, 'index']);
 
-Route::middleware('api.token')->get('/data-analysis-secure', [SaleController::class, 'test']);
+Route::middleware('api.token')->get('/data-analysis/secure', [SaleController::class, 'test']);
